@@ -5,7 +5,7 @@ Author Name: Sheldon Skaggs
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul {
+body, header, nav, main, footer, h1, div, img, ul, fig, figcaption {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,12 +21,15 @@ img {
   display: block;
 }
 
+/* Style rule for box sizing applies to all elements */
+* {
+  box-sizing: border-box;
+}
+
 /* Style rules for mobile viewport */
 
 /* Style rule for header */
 header {
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   background-color: #000;
   height: 190px;
@@ -104,6 +107,25 @@ main {
 .action {
   font-size: 1.35em;
   color: #666600;
+  font-weight: bold;
+}
+
+.frame {
+  position: relative;
+  max-width: 450px;
+  margin: 2% auto;
+}
+
+.pic-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
