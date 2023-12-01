@@ -84,6 +84,10 @@ main {
   font-family: 'Roboto Slab', serif;
 }
 
+.mobile h3 {
+  text-shadow: 5px 5px 8px #ccc;
+}
+
 .tel-link {
   background-color: #404040;
   padding: 2%;
@@ -108,6 +112,7 @@ main {
   font-size: 1.35em;
   color: #666600;
   font-weight: bold;
+  text-shadow: 5px 5px 8px #ccc;
 }
 
 .frame {
@@ -185,7 +190,6 @@ footer p a {
 
   /* Tablet Viewport: Style rule for header */
   header {
-    position: static;
     padding-bottom: 2%;
   }
 
@@ -207,6 +211,17 @@ footer p a {
   /* Tablet Viewport: Style rules for main content area */
   main ul {
     margin: 0 0 4% 10%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+  }
+
+  .pic-text {
+    font-size: 1em;
+    padding: 10px;
   }
 
   #exercises {
@@ -277,6 +292,20 @@ footer p a {
 
   main h1 {
     font-size: 1.8em;
+  }
+
+  .pic-text{
+    font-size: 1.5em;
+    padding: 20px;
+  }
+
+  .frame {
+    opacity: .9;
+  }
+
+  .frame:hover {
+    opacity: 1;
+    box-shadow: 8px 8px 10px #808080;
   }
 
   #weights, #cardio, #training {
