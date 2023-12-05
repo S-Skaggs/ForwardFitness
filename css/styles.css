@@ -349,6 +349,12 @@ footer p a {
     background-color: #ccc;
   }
 
+  /* Tablet Viewport: Style rule for form element */
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
+
 }
 
 /* Media Query for Desktop Viewport */
